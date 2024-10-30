@@ -20,19 +20,19 @@
 </head>
 <body>
     <!-- Header -->
-     <header>
-        <div>
-            <img src="./images/이종민_circle.ico" alt="logo">
-            <h1><a href="#">JongMin</a></h1>
+     <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__image" src="./images/이종민_circle.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">JongMin</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="about">JongMin</a></li>
-                <li><a href="skills">Skill</a></li>
-                <li><a href="work">Portfolio</a></li>
-                <li><a href="#license">Lisense</a></li>
-                <li><a href="#contact">contact</a></li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#home" class="header__menu__item active">Home</a></li>
+                <li><a href="about" class="header__menu__item">JongMin</a></li>
+                <li><a href="skills" class="header__menu__item">Skill</a></li>
+                <li><a href="work" class="header__menu__item">Portfolio</a></li>
+                <li><a href="#license" class="header__menu__item">Lisense</a></li>
+                <li><a href="#contact" class="header__menu__item">contact</a></li>
             </ul>
         </nav>
      </header>
@@ -48,9 +48,9 @@
         </section>
 
         <!-- about -->
-        <section id="about">
-                <h2>종민</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, quod libero fuga magnam deserunt, cumque, accusamus repellat similique optio alias pariatur. Quod quisquam tempore veritatis hic obcaecati nulla eum cumque?</p>
+        <section id="about" class="section max-container">
+                <h2 class="title">종민</h2>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, quod libero fuga magnam deserunt, cumque, accusamus repellat similique optio alias pariatur. Quod quisquam tempore veritatis hic obcaecati nulla eum cumque?</p>
                 <ul>
                     <li>
                         <i class="fa-brands fa-html5"></i>
@@ -80,9 +80,10 @@
         </section>
 
         <!-- skills -->
-        <section id="skills">
-            <h2>SKILLS</h2>
-                <p>언어 및 도구</p>
+        <section id="skills" class="section">
+            <div class="max-container">
+            <h2 class="title">SKILLS</h2>
+                <p class="description">언어 및 도구</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui minus corporis porro cum voluptates velit! Assumenda, ex. Accusamus dignissimos, magnam ut quia unde nisi provident eum et in minima optio!</p>
                 <div>
                     <section>
@@ -130,12 +131,14 @@
                             </ul>
                     </section>
                 </div>
+            </div>
         </section>
 
         <!-- work -->
-        <section id="work">
-            <h2>포트폴리오</h2>
-            <p>프로젝트</p>
+        <section id="work" class="section">
+            <div class="max-container">
+            <h2 class="title">포트폴리오</h2>
+            <p class="description">프로젝트</p>
             <ul>
                 <li><button>ALL <span>10</span></button></li>
                 <li><button>Front-end <span>3</span></button></li>
@@ -207,12 +210,14 @@
                     </a>
                 </li>
             </ul>
+        </div>
         </section>
 
         <!-- licensce -->
-        <section id="license">
-            <h2>자격증</h2>
-            <p>국가 기술 자격증</p>
+        <section id="license" class="section">
+            <div class="max-container">
+            <h2 class="title">자격증</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li>
                     <img src="./images/자격증.jpeg" alt="자격증이미지">
@@ -236,7 +241,7 @@
                     </div>
                 </li>
             </ul>
-
+        </div>
         </section>
 
         <!-- Arrow up -->
@@ -247,14 +252,16 @@
     </main>
 
     <!-- Footer -->
-     <footer id="contact">
-        <h2>연락주세요!</h2>
-        <p>agmon96@naver.com</p>
+     <div class="max-container">
+     <footer id="contact" class="section">
+        <h2 class="title">연락주세요!</h2>
+        <p class="description">agmon96@naver.com</p>
         <ul>
             <li><a href="https://github.com/leeJongMin58" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
             <li><a href=""></a></li>
         </ul>
         <p>ⓒJongmin - All rights reserved</p>
      </footer>
+    </div>
 </body>
 </html>
